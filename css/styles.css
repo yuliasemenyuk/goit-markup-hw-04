@@ -134,14 +134,19 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--dark-background-color);
+    background: url(/images/hero.back.png),
+    linear-gradient(
+        to top, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        var(--dark-background-color);
     text-align: center;
-    background-image: url(/images/hero.back.png),
+    /* background-image: url(/images/hero.back.png),
     linear-gradient(
         to top, 
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-    );
+    ); */
 
 }
 .hero-title {
