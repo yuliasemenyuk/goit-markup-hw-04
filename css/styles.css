@@ -104,6 +104,7 @@ img {
 /* Контакты */
 .contacts{
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 .contact-item:not(:last-child) {
