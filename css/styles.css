@@ -6,7 +6,7 @@
     --text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-
+    --icon-link-color: #AFB1B8;
 }
 
 body{
@@ -33,6 +33,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+}
+a{
+    color: inherit;
 }
 img {
     display: block;
@@ -199,7 +202,8 @@ img {
 }
 
 .directions-section-title,
-.members-section-title {
+.members-section-title,
+.clients-section-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -251,6 +255,67 @@ img {
 .members-list-item div{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.soc-media-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.soc-media-item:last-child{
+    margin-right: 0;
+}
+.soc-media-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-align: center;
+}
+.soc-media-item a{
+    text-align: center;
+    padding: 12px;
+    color: var(--icon-link-color);
+}
+.soc-media-item a:hover,
+.soc-media-item a:focus{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--primary-white-color);
+}
+.soc-media-icon{
+    fill: currentColor;
+}
+
+/* Постоянные клиенты */
+.clients-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-list li{
+    margin-right: 30px;
+}
+.clients-list li:last-child{
+    margin-right: 0;
+}
+.clients-list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-link-color);
+    border-radius: 4px;
+    color: var(--icon-link-color);
+}
+.clients-list a:hover,
+.clients-list a:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.client-icon{
+    fill: currentColor;
 }
 
 /* Наши проекты */
@@ -357,4 +422,20 @@ img {
 .address-link:hover,
 .address-link:focus{
     color: var(--accent-color);
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+}
+.soc-media-container{
+    margin-left: 70px;
+}
+.soc-media-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    color: var(--primary-white-color);
+}
+.footer .soc-media-icon{
+    fill: var(--primary-white-color);
 }
